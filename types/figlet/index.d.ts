@@ -369,6 +369,8 @@ declare namespace figlet {
     function defaults(opt?: Partial<Defaults>): Defaults;
 
     function loadFont(font: Fonts, cb: (error: Error | null, fontOptions?: FontOptions) => void): void;
+    
+    function parseFont(fontName: string, data: string): FontOptions;
     /**
      * @todo
      * Use 'node' namespace to add following methods only in node environment.
